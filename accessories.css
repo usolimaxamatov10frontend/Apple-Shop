@@ -1,0 +1,115 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#f5f5f7;
+}
+
+
+header{
+background:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:black;
+font-weight:500;
+}
+
+
+.hero{
+background:#eee;
+padding:100px;
+border-radius:30px;
+margin:30px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+
+button{
+background:#0071e3;
+border:none;
+color:white;
+padding:10px 25px;
+border-radius:20px;
+cursor:pointer;
+}
+
+
+.title{
+text-align:center;
+margin:40px 0;
+font-size:30px;
+}
+
+
+.products{
+padding:0 60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card p{
+color:#0071e3;
+font-weight:bold;
+}
+
+
+footer{
+margin-top:50px;
+padding:30px;
+text-align:center;
+background:white;
+}
+
+
+@media(max-width:700px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero{
+padding:50px;
+}
+
+}
