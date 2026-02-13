@@ -9,22 +9,58 @@ body{
 background:#f5f5f7;
 }
 
-
-header{
+.main-header{
 background:white;
-padding:20px 60px;
+padding:15px 60px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
+
+.logo{
+font-size:22px;
+font-weight:600;
+}
+
+.logo span{
+color:#0071e3;
+}
+
+.menu a{
+margin:0 15px;
+text-decoration:none;
+color:#222;
+font-weight:500;
+}
+
+.right{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.right input{
+padding:7px 15px;
+border-radius:20px;
+border:1px solid #ddd;
+outline:none;
+}
+
+.icons span{
+font-size:18px;
+cursor:pointer;
+}
+
 
 nav a{
 margin-left:25px;
 text-decoration:none;
 color:black;
-font-weight:500;
 }
-
 
 .hero{
 background:#eee;
@@ -71,6 +107,10 @@ padding:20px;
 border-radius:20px;
 text-align:center;
 transition:.3s;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 }
 
 .card:hover{
