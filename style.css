@@ -88,11 +88,6 @@ button:hover{
 transform:scale(1.05);
 }
 
-.cats{
-margin: auto 350px; 
-gap: 20px;  
-}
-
 .title{
 text-align:center;
 margin:40px 0;
